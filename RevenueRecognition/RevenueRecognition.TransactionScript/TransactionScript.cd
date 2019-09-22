@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RevenueRecognition.TransactionScript.RecognitionService">
+    <Position X="2" Y="1" Width="2.25" />
+    <Members>
+      <Method Name="Allocate" Hidden="true" />
+      <Method Name="RecognitionService" Hidden="true" />
+    </Members>
+    <AssociationLine Name="_gateway" Type="RevenueRecognition.TransactionScript.Gateway" FixedToPoint="true">
+      <Path>
+        <Point X="4.25" Y="1.75" />
+        <Point X="5.75" Y="1.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.308" Y="0.05" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AABACAAEAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RecognitionService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_gateway" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RevenueRecognition.TransactionScript.Gateway">
+    <Position X="5.75" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Gateway.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RevenueRecognition.TableModule.Contract">
+    <Position X="3.5" Y="0.5" Width="2" />
+    <Members>
+      <Method Name="Allocate" Hidden="true" />
+      <Method Name="Contract" Hidden="true" />
+      <Method Name="GetProductId" Hidden="true" />
+      <Method Name="GetWhenSigned" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAACAAAAAAAAAAAAACAAAABAAAAAAE=</HashCode>
+      <FileName>Contract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RevenueRecognition.TableModule.Product">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <Members>
+      <Method Name="Product" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RevenueRecognition.TableModule.RevenueRecognition">
+    <Position X="7" Y="0.5" Width="1.75" />
+    <Members>
+      <Method Name="GetNextId" Hidden="true" />
+      <Method Name="RevenueRecognition" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="RevenueRecognition.TableModule.TableModule" ManuallyRouted="true">
+      <Path>
+        <Point X="4.5" Y="3.25" />
+        <Point X="4.5" Y="2.76" />
+        <Point X="7.875" Y="2.76" />
+        <Point X="7.875" Y="1.925" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAABCAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RevenueRecongnition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RevenueRecognition.TableModule.TableModule">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TableModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

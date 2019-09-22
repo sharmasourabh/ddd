@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevenueRecognition.Domain", "RevenueRecognition.Domain\RevenueRecognition.Domain.csproj", "{BB416039-33E5-405F-B4EF-0B7EE5AFE17B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevenueRecognition.Tests", "RevenueRecognition.Tests\RevenueRecognition.Tests.csproj", "{DFA12044-4DB3-462E-99C3-F5FE0B3B327E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevenueRecognition", "RevenueRecognition\RevenueRecognition.csproj", "{6078278B-A249-4DC2-9459-AD63446FB46C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevenueRecognition.Core", "RevenueRecognition.Core\RevenueRecognition.Core.csproj", "{40075089-8870-4099-8DEC-52727AC8AFA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevenueRecognition.TransactionScript", "RevenueRecognition.TransactionScript\RevenueRecognition.TransactionScript.csproj", "{2DA7593B-56DC-453B-A2E3-B45A918E7442}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevenueRecognition.TableModule", "RevenueRecognition.TableModule\RevenueRecognition.TableModule.csproj", "{5BBB6222-73DA-486E-A6B2-F81DEA536175}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB416039-33E5-405F-B4EF-0B7EE5AFE17B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB416039-33E5-405F-B4EF-0B7EE5AFE17B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB416039-33E5-405F-B4EF-0B7EE5AFE17B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB416039-33E5-405F-B4EF-0B7EE5AFE17B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFA12044-4DB3-462E-99C3-F5FE0B3B327E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA12044-4DB3-462E-99C3-F5FE0B3B327E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA12044-4DB3-462E-99C3-F5FE0B3B327E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA12044-4DB3-462E-99C3-F5FE0B3B327E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6078278B-A249-4DC2-9459-AD63446FB46C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6078278B-A249-4DC2-9459-AD63446FB46C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6078278B-A249-4DC2-9459-AD63446FB46C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6078278B-A249-4DC2-9459-AD63446FB46C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40075089-8870-4099-8DEC-52727AC8AFA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40075089-8870-4099-8DEC-52727AC8AFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40075089-8870-4099-8DEC-52727AC8AFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40075089-8870-4099-8DEC-52727AC8AFA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DA7593B-56DC-453B-A2E3-B45A918E7442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA7593B-56DC-453B-A2E3-B45A918E7442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA7593B-56DC-453B-A2E3-B45A918E7442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA7593B-56DC-453B-A2E3-B45A918E7442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BBB6222-73DA-486E-A6B2-F81DEA536175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BBB6222-73DA-486E-A6B2-F81DEA536175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BBB6222-73DA-486E-A6B2-F81DEA536175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BBB6222-73DA-486E-A6B2-F81DEA536175}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4489F4EF-929B-4F38-952C-5F4DC15F6C76}
+	EndGlobalSection
+EndGlobal
