@@ -24,7 +24,7 @@ namespace RevenueRecognition.Domain
 
         public bool Equals(ContractId other)
         {
-            if (ReferenceEquals(null, other)) return false;
+            if (other is null) return false;
             if (ReferenceEquals(this, other)) return true;
             return Value.Equals(other.Value);
         }

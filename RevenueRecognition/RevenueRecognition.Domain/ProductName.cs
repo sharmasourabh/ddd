@@ -18,9 +18,14 @@ namespace RevenueRecognition.Domain
 
         private static void CheckValidity(string value)
         {
-            if (value.Length > 48)
+            if (String.IsNullOrEmpty(value))
                 throw new ArgumentOutOfRangeException(
-                    "Name cannot be longer that 48 characters",
+                    "You must specify the name.",
+                    nameof(value));
+
+            else if (value.Length > 48)
+                throw new ArgumentOutOfRangeException(
+                    "Name cannot be longer that 48 characters.",
                     nameof(value));
         }
     }

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data.SqlClient;
 using NodaMoney;
 //using RevenueRecogniction.BasePatterns;
 
@@ -29,7 +28,7 @@ namespace RevenueRecognition.TransactionScript
                 }
                 return result;
             }
-            catch (SqlException e)
+            catch (Exception e)
             {
                 throw new ApplicationException(e.Message, e);
             }

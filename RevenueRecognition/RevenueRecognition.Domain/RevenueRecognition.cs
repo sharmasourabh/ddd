@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using java.math;
 using NodaTime;
 using NodaMoney;
 
@@ -13,7 +12,7 @@ namespace RevenueRecognition.Domain
 
         private Money _amount;
 
-        private String currencyCode = Contract.CURRENCY.Code;
+        private readonly String currencyCode = Contract.CURRENCY.Code;
 
         public RevenueRecognition(Contract contract, LocalDate recognizedOn, Money amount)
         {

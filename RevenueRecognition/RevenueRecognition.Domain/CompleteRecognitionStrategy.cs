@@ -8,7 +8,7 @@ namespace RevenueRecognition.Domain
     {
         public override void CalculateRevenueRecognitions(Contract contract)
         {
-            contract.addRevenueRecognition(contract.getRevenue(), contract.getDateSigned());
+            contract.addRevenueRecognition(contract.revenue, contract.dateSigned);
         }
     }
 }

@@ -5,13 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="IKVM" Version="8.1.5717" />
     <PackageReference Include="NodaMoney" Version="1.0.5" />
     <PackageReference Include="NodaTime" Version="2.4.7" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RevenueRecognization.Core\RevenueRecognition.Core.csproj" />
+    <ProjectReference Include="..\RevenueRecognition.Core\RevenueRecognition.Core.csproj" />
   </ItemGroup>
 
 </Project>
