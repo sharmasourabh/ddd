@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "e354a008-61ea-4edf-98f0-44d301e8c990",
+		"name": "NoCQRS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find Policies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"policyNumber\" : \"4d827c13-68de-480e-bd30-eab2963ab95d\",\r\n\t\"policyStartFrom\" : \"2019-04-28T14:45:15\",\r\n\t\"policyStartTo\" : null,\r\n\t\"carPlateNumber\" : \"\",\r\n\t\"policyHolderFirstName\" : \"\",\r\n\t\"policyHolderLastName\" : \"\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/v1/policies/find",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"policies",
+						"find"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuyAdditionalCover",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"PolicyNumber\": \"4d827c13-68de-480e-bd30-eab2963ab95d\",\n    \"EffectiveDateOfChange\": \"2019-09-28T14:45:15\",\n    \"NewCoverCode\": \"OFF-002\",\n    \"NewCoverPrice\": 5444,\n    \"NewCoverPriceUnit\": \"10000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/v1/policies/BuyAdditionalCover",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"policies",
+						"BuyAdditionalCover"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "policies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"OfferNumber\" : \"OFF-001\",\n\t\"PurchaseDate\": \"2019-04-28T14:45:15\",\n\t\"PolicyStartDate\": \"2019-04-28T14:45:15\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/v1/policies",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"policies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "policies/{policyNumber}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:5001/api/v1/policies/4d827c13-68de-480e-bd30-eab2963ab95d",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"policies",
+						"4d827c13-68de-480e-bd30-eab2963ab95d"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

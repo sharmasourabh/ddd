@@ -7,4 +7,4 @@ CREATE DATABASE lab_policy;
 GRANT ALL PRIVILEGES ON DATABASE lab_policy TO lab_user;
 
 CREATE DATABASE lab_cqrs_dotnet_demo
-GRANT ALL PRIVILEGES ON DATABASE lab_policy TO lab_user;
+GRANT ALL PRIVILEGES ON DATABASE lab_cqrs_dotnet_demo TO lab_user;

@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "ff04dde0-b783-4fd4-ac0f-030993cc7ce4",
+		"name": "CQRS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find Policies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"policyNumber\" : \"1e135379-845b-4577-82c0-c5c42fe9a21c\",\r\n\t\"policyStartFrom\" : \"2019-04-28T14:45:15\",\r\n\t\"policyStartTo\" : null,\r\n\t\"carPlateNumber\" : \"\",\r\n\t\"CarPlateNumber\" : \"\",\r\n\t\"PolicyHolder\" : \"\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/v1/policies/find",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"policies",
+						"find"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuyAdditionalCover",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"PolicyNumber\": \"1e135379-845b-4577-82c0-c5c42fe9a21c\",\n    \"EffectiveDateOfChange\": \"2019-09-28T14:45:15\",\n    \"NewCoverCode\": \"ASSISTANCE\",\n    \"NewCoverPrice\": 5444,\n    \"NewCoverPriceUnit\": \"10000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/v1/policies/BuyAdditionalCover",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"policies",
+						"BuyAdditionalCover"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "policies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"OfferNumber\" : \"OFF-001\",\n\t\"PurchaseDate\": \"2019-04-28T14:45:15\",\n\t\"PolicyStartDate\": \"2019-04-28T14:45:15\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/v1/policies",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"policies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "policies/{policyNumber}/versions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:5001/api/v1/policies/1e135379-845b-4577-82c0-c5c42fe9a21c/versions",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"policies",
+						"1e135379-845b-4577-82c0-c5c42fe9a21c",
+						"versions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "policies/{policyNumber}/versions/{versionNumber}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:5001/api/v1/policies/1e135379-845b-4577-82c0-c5c42fe9a21c/versions/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"policies",
+						"1e135379-845b-4577-82c0-c5c42fe9a21c",
+						"versions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2c27b6f6-7d1d-4d2a-9b47-01fb27910ffb",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "590b93c0-4661-4556-9009-04aefe0b5e4b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
